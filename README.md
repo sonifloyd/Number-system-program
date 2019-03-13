@@ -28,5 +28,15 @@ public interface Queue<E> extends Collection<E>
 Syntax:
 public interface Dequeue<E> extends Queue<E>  
 5. Map interface: A Map (java.util.Map) represents a key, value pair storage of elements. Map interface does not implement the Collection interface. It can only contain a unique key but can have duplicate elements. There are two interfaces which implement Map in java that are Map interface and Sorted Map.
-
-
+# What is the difference between ArrayList and Vector?
+No.	ArrayList	                                       Vector
+1)	ArrayList is not synchronized.	              Vector is synchronized.
+2)	ArrayList is not a legacy class.	            Vector is a legacy class.
+3)	ArrayList increases its size by 50% of the array size.	Vector increases its size by doubling the array size.
+4)	ArrayList is not ?thread-safe? as it is not synchronized.	Vector list is ?thread-safe? as it?s every method is synchronized.
+  5) Multithread                                          single thread
+6) present jdk 1.2                                    present jdk 1.0
+7) three overloaded constructor                     four overloaded constructor
+-ArrayList()                                        -vector()
+-ArrayList(int index)                               -vector(int initial Capcity)
+-ArrayList(collection col)                 -vector(int initialCapcity,int incrementalCapcity)
