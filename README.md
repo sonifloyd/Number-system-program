@@ -103,6 +103,44 @@ The hashCode() method returns the same integer number if two keys (by calling eq
 However, it is possible that two hash code numbers can have different or the same keys.
 
 If two objects do not produce an equal result by using the equals() method, then the hashcode() method will provide the different integer result for both the objects.
+# What is hash-collision in Hashtable and how it is handled in Java?
+Two different keys with the same hash value are known as hash-collision. Two separate entries will be kept in a single hash bucket to avoid the collision. There are two ways to avoid hash-collision.
+1)Separate Chaining
+2)Open Addressing
+# What is the Dictionary class?
+The Dictionary class provides the capability to store key-value pairs.
+
+# What is the default size of load factor in hashing based collection?
+The default size of load factor is 0.75. The default capacity is computed as initial capacity * load factor. For example, 16 * 0.75 = 12. So, 12 is the default capacity of Map.
+
+# What do you understand by fail-fast?
+The Iterator in java which immediately throws ConcurrentmodificationException, if any structural modification occurs in, is called as a Fail-fast iterator. Fail-fats iterator does not require any extra space in memory.
+# What is the difference between the length of an Array and size of ArrayList?
+The length of an array can be obtained using the property of length whereas ArrayList does not support length property, but we can use size() method to get the number of objects in the list.
+
+Finding the length of the array
+
+Int [] array = new int[4];  
+System.out.println("The size of the array is " + array.length);  
+          
+Finding the size of the ArrayList
+
+ArrayList<String> list=new ArrayList<String>();    
+list.add("ankit");    
+list.add("nippun");  
+System.out.println(list.size());  
+# How to convert ArrayList to Array and Array to ArrayList?
+We can convert an Array to ArrayList by using the asList() method of Arrays class. asList() method is the static method of Arrays class and accepts the List object. Consider the following syntax:
+
+Arrays.asList(item)  
+We can convert an ArrayList to Array using toArray() method of the ArrayList class. Consider the following syntax to convert the ArrayList to the List object.
+
+List_object.toArray(new String[List_object.size()])  
+
+
+
+
+
 
 
 
