@@ -134,6 +134,10 @@ We can convert an Array to ArrayList by using the asList() method of Arrays clas
 
 Arrays.asList(item)  
 We can convert an ArrayList to Array using toArray() method of the ArrayList class. Consider the following syntax to convert the ArrayList to the List object.
+# HashMap doesn’t maintain any order.
+# TreeMap sort the entries in ascending order of keys.
+# LinkedHashMap maintains the insertion order.
+
 
 List_object.toArray(new String[List_object.size()])  
 
