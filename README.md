@@ -54,7 +54,7 @@ Iterator traverses the elements in the forward direction only whereas ListIterat
 No.	Iterator	                                                                 ListIterator
 1)	The Iterator traverses the elements in the forward direction only.	ListIterator traverses the elements in backward and                                                                         forward directions both.
 2)	The Iterator can be used in List, Set, and Queue.	ListIterator can be used in List only.
-3)	The Iterator can only perform remove operation while traversing the collection.	ListIterator can perform ?add,? ?remove,?                                                                     and ?set? operation while traversing the collection.
+3)	The Iterator can only perform remove operation while traversing the collection.	ListIterator can perform ?add,? ?            remove,?                                                                     and ?set? operation while traversing the                                                                                           collection.
 # What is the difference between Iterator and Enumeration?
 No.	Iterator	                                                          Enumeration
 1)	The Iterator can traverse legacy and non-legacy elements.	Enumeration can traverse only legacy elements.
