@@ -156,6 +156,20 @@ A HashMap provides its set of keys and a Java application can iterate over them.
 The Hashtable class is considered to be a legacy class.
  # How HashMap works in Java ?
 A HashMap in Java stores key-value pairs. The HashMap requires a hash function and uses hashCode and equals methods, in order to put and retrieve elements to and from the collection respectively. When the put method is invoked, the HashMap calculates the hash value of the key and stores the pair in the appropriate index inside the collection. If the key exists, its value is updated with the new value. Some important characteristics of a HashMap are its capacity, its load factor and the threshold resizing.
+# How to make a collection thread safe?
+Use below methods:
+
+Collections.synchronizedList(list);
+Collections.synchronizedSet(set);
+Collections.synchronizedMap(map);
+Above methods take collection as parameter and return same type of collection which are synchronized and thread safe.
+# How to make a collection read only?
+Use following methods:
+
+Collections.unmodifiableList(list);
+Collections.unmodifiableSet(set);
+Collections.unmodifiableMap(map);
+These methods takes collection parameter and return a new read-only collection with same elements as in original collection.
 
 
 
